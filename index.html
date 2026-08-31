@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakTech Doors - Sales Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-section">
+                <img id="logo" src="images/maktech-logo.png" alt="MakTech Doors Logo" class="logo">
+                <h1>MakTech Doors</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#sales">Sales</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to MakTech Doors</h2>
+            <p>Security. Style. Durability.</p>
+            <p class="tagline">Your premium door supplier for residential, commercial, and industrial applications</p>
+        </div>
+    </section>
+
+    <section id="upload" class="upload-section">
+        <div class="container">
+            <h2>Update Your Logo</h2>
+            <div class="upload-form">
+                <input type="file" id="logoInput" accept="image/*" />
+                <button onclick="uploadLogo()">Upload New Logo</button>
+                <p class="upload-info">Supported formats: PNG, JPG, GIF (Max 5MB)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Door Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-icon">🚪</div>
+                    <h3>Wooden Doors</h3>
+                    <p>Premium quality wooden doors for classic elegance and warmth. Perfect for residential spaces.</p>
+                    <p class="price">Starting from $299</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🔒</div>
+                    <h3>Steel Security Doors</h3>
+                    <p>Durable and secure steel doors for maximum protection. Ideal for commercial and industrial use.</p>
+                    <p class="price">Starting from $499</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">✨</div>
+                    <h3>Glass Doors</h3>
+                    <p>Modern glass doors for contemporary designs. Perfect for storefronts and modern interiors.</p>
+                    <p class="price">Starting from $399</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">➡️</div>
+                    <h3>Sliding Doors</h3>
+                    <p>Space-saving sliding door solutions for patios and commercial spaces. Smooth operation guaranteed.</p>
+                    <p class="price">Starting from $349</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🪟</div>
+                    <h3>Aluminum Doors</h3>
+                    <p>Lightweight and corrosion-resistant aluminum doors. Ideal for modern architecture.</p>
+                    <p class="price">Starting from $449</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🔑</div>
+                    <h3>Smart Lock Doors</h3>
+                    <p>Technologically advanced doors with integrated smart lock systems for ultimate convenience and security.</p>
+                    <p class="price">Starting from $599</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sales" class="sales">
+        <div class="container">
+            <h2>Sales Tracker</h2>
+            <div class="sales-content">
+                <div class="sales-table-container">
+                    <table class="sales-table">
+                        <thead>
+                            <tr>
+                                <th>Door Type</th>
+                                <th>Units Sold</th>
+                                <th>Total Revenue</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Wooden Doors</td>
+                                <td>145</td>
+                                <td>$43,455</td>
+                                <td><span class="status-badge active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Steel Security Doors</td>
+                                <td>98</td>
+                                <td>$48,902</td>
+                                <td><span class="status-badge active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Glass Doors</td>
+                                <td>67</td>
+                                <td>$26,733</td>
+                                <td><span class="status-badge active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Sliding Doors</td>
+                                <td>112</td>
+                                <td>$39,088</td>
+                                <td><span class="status-badge active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Aluminum Doors</td>
+                                <td>84</td>
+                                <td>$37,716</td>
+                                <td><span class="status-badge active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Smart Lock Doors</td>
+                                <td>56</td>
+                                <td>$33,544</td>
+                                <td><span class="status-badge active">Active</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="sales-stats">
+                    <div class="stat-card">
+                        <h4>Total Units Sold</h4>
+                        <p class="stat-number">562</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Total Revenue</h4>
+                        <p class="stat-number">$229,438</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Average Sale</h4>
+                        <p class="stat-number">$408</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="info-item">
+                        <strong>Phone:</strong>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Email:</strong>
+                        <p>sales@maktechdoors.com</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Address:</strong>
+                        <p>123 Door Avenue<br>Tech City, TC 12345<br>United States</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Hours:</strong>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MakTech Doors. All rights reserved.</p>
+            <p>Security. Style. Durability.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
